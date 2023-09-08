@@ -1,0 +1,9 @@
+---
+  menu:
+    bg:
+      0:
+        name: akihibara_day
+        color: "#AC8E0E32"
+    
+  scenarios: 
+    day1: text/1_part.txt
