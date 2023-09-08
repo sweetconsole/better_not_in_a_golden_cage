@@ -7,3 +7,10 @@
     
   scenarios: 
     day1: text/1_part.txt
+  
+  bg: 
+    backstage: images/bg/backstage.jpg
+
+  positions:
+    lleft: -0.25 -0.59
+    rright: 0.25 -0.59
