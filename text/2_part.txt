@@ -1,4 +1,4 @@
-label day2
+label 2_part
     time day
 
     play ambience room_mc_day fadein 2
