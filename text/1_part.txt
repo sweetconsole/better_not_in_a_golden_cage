@@ -364,7 +364,7 @@ label start
 
     el "Ну пошли тогда."
 
-    scene corporation_night
+    scene bg corporation_night
     show el kojanka normal
     with fade 1 1 1 black
 
