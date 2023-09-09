@@ -4,6 +4,9 @@
       0:
         name: akihibara_day
         color: "#AC8E0E32"
+    logos:
+      0:
+        asset: 
     
   scenarios: 
     part_1: text/part_1.txt

@@ -1,4 +1,4 @@
-label part_1
+label start
     time day
     scene bg black
 
