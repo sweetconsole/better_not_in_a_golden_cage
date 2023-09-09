@@ -6,7 +6,8 @@
         color: "#AC8E0E32"
     
   scenarios: 
-    day1: text/1_part.txt
+    part1: text/part1.txt
+    part2: text/part2.txt
   
   bg: 
     backstage: images/bg/backstage.jpg
