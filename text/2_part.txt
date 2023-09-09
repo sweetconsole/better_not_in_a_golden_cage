@@ -1,4 +1,4 @@
-label 2_part
+label start
     time day
 
     play ambience room_mc_day fadein 2
@@ -34,7 +34,7 @@ label 2_part
 
     hi "Ну это ты конечно выдал! Пошли давай, приготовлю завтрак!"
 
-    scene kitchen_mc_day
+    scene bg kitchen_mc_day
     show hi forma normal hands2
     with dissolve 2
 
@@ -165,7 +165,7 @@ label 2_part
     "Через пару месяцев люди будут закутываться в одежду и выглядеть, как капуста."
     "Давно не видел Химицу в каких-нибудь тёплых нарядах. Но уже вскоре дождусь и увижу."
 
-    scene tokyo_street_day 
+    scene bg tokyo_street_day 
     show hi forma normal hands2
     with fade 1 1 1 black
 
