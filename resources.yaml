@@ -9,8 +9,8 @@
     #     asset: images/bg/backstage.jpg
     
   scenarios: 
-    part_1: text/part_1.txt
-    part_2: text/part_2.txt
+    day1: text/1_part.txt
+    day2: text/2_part.txt
   
   bg: 
     backstage: images/bg/backstage.jpg
