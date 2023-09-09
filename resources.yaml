@@ -10,6 +10,7 @@
   
   bg: 
     backstage: images/bg/backstage.jpg
+    sky_night: images/bg/sky_night.jpg
 
   positions:
     lleft: -0.25 -0.59
