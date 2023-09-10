@@ -1,5 +1,7 @@
 label start
     time day
+    
+    play music in_this_very_moment fadein 2
 
     scene bg black with dissolve 2
 
@@ -15,13 +17,15 @@ label start
     "Из кухни послышались тихие шаги."
     "Вот и Химицу. Интересно, это она пришла рано, или я поздно встал?"
 
-    show hi forma dontlike2 hands3
+    show hi forma dontlike2 hands3 with dissolve 2
 
     hi "Нико-кун, подъём!"
 
     me "Я уже и не сплю."
 
-    hi "Какая-то ты весёлая, что случилось?"
+    show hi forma smile hands2
+
+    me "Какая-то ты весёлая, что случилось?"
     "Я обратил внимание на какую-то чрезмерную радость в её глазах."
 
     show hi forma happy hands1
@@ -37,7 +41,7 @@ label start
 
     show hi forma smile hands4
 
-    hi Еда уже готова.
+    hi "Еда уже готова."
 
     "Жаль, что не завтрак в постель, хотя это уже перебор даже для неё."
     "Я надел тапки и лениво поплёлся на кухню."
@@ -45,6 +49,8 @@ label start
     scene bg corridor_mc_day with dissolve 1
     pause hard 1
     scene bg kitchen_mc_day with dissolve 1
+
+    play music take_a_deep_breath fadein 2
 
     "В нос ударил ароматный запах яичницы. Я уверен, что по вкусу будет ничуть не хуже."
 
@@ -94,6 +100,8 @@ label start
     hi "Потому что я тебе его и раньше готовила, но такой отдачи от тебя я не видела."
 
     me "Всё бывает в первый раз знаешь ли!"
+
+    play music waltz_of_doubts fadein 2
 
     scene bg school_far_day 
     show hi forma normal

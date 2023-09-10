@@ -5,17 +5,21 @@
         name: tokyo_street_sunset
         condition: "datetime.hour >= 17 && datetime.hour < 21"
         twirl: false
+        color: "#D1B53B32"
       1:
         name: tokyo_street_night
         condition: "datetime.hour >= 21 || datetime.hour < 7"
         twirl: false
+        color: "#D1B53B32"
       2:
         name: tokyo_street_day_birds
         condition: "datetime.hour >= 7 && datetime.hour < 17"
         twirl: false
-    # logos:
-    #   0:
-    #     asset: images/bg/backstage.jpg
+        color: "#D1B53B32"
+        
+    logos:
+      0:
+        asset: images/logo.png
     
   scenarios: 
     day1: text/1_part.txt
@@ -33,8 +37,46 @@
     reminiscences: sounds/music/reminiscences.ogg
     silhouette_in_sunset: sounds/music/silhouette_in_sunset.ogg
     smooth_machine: sounds/music/smooth_machine.ogg
+    waltz_of_doubts: sounds/music/waltz_of_doubts.ogg
     
-
   positions:
     lleft: -0.25 -0.59
     rright: 0.25 -0.59
+
+  help:
+    credits: 
+      <b>Программист</b>
+      <br>
+      SweetConsole
+      <br>
+
+      <b>Звукорежисёр, Гейм-дизайнер</b>
+      <br>
+      Meast
+      <br>
+
+      <b>Авторы фанфика</b>
+      <br>
+      p00k
+      <br>
+      _Bernadotte
+      <br>
+
+      <b>Оригинальная игра</b>
+      <br>
+      Soviet Games
+
+    contacts:
+      <b>Аккаунты авторов модификации в Steam</b>
+      <br>https://steamcommunity.com/id/sweetconsole/
+      https://steamcommunity.com/profiles/76561198987221688
+      <br>
+
+      <b>Странички авторов модификации во ВКонтакте</b>
+      <br>https://vk.com/sweetconsole<br>https://vk.com/alaccy
+      <br>
+
+      <b>Авторы на Ficbook</b>
+      <br>https://ficbook.net/authors/5169985
+      https://ficbook.net/authors/4357951
+      <br>
