@@ -136,6 +136,8 @@ label start
 
     "Химицу с недовольным личиком уставилась на меня."
 
+    play music pancakes fadein 2
+
     me "Что такое?"
 
     hi "Вот вечно ты так! Постоянно уходишь в себя и перестаёшь замечать окружение!"
@@ -170,6 +172,8 @@ label start
     "Мне в лицо подул свежий, прохладный ветер, лето медленно, но верно сдаёт позиции."
     "Через пару месяцев люди будут закутываться в одежду и выглядеть, как капуста."
     "Давно не видел Химицу в каких-нибудь тёплых нарядах. Но уже вскоре дождусь и увижу."
+
+    play music dont_care fadein 2
 
     scene bg tokyo_street_day 
     show hi forma normal hands2
@@ -232,6 +236,8 @@ label start
 
     "Химицу улыбнулась. Да и я тоже."
 
+    play music silhouette_in_sunset fadein 2
+
     scene bg school_near_day with fade 1 1 1 black
 
     "За такими разговорами мы подошли к школе. Быстро однако."
@@ -243,9 +249,7 @@ label start
     "Мы вместе зашли в школу, переодели сменку и пошли по разным кабинетам."
     "И она только улыбнулась мне на прощанье."
 
-    scene bg class_mc_break 
-    show ca forma normal
-    with dissolve 2
+    scene bg class_mc_break with dissolve 2
 
     "Я же поднялся на второй этаж и неспеша зашёл в класс."
     "Присутствовали Кёске, Майкл, Кетрин."
@@ -253,6 +257,9 @@ label start
     "Я оглядел всех и неспеша поплёлся к своему насиженному месту."
 
     "Кёске приветливо со мной поздоровался и пожал мне руку. С Майклом мы вновь поприветствовали друг друга кивками."
+
+    show ca forma normal with dissolve 2
+
     "Ну а Кетрин..."
 
     ca "Привет."
@@ -284,7 +291,7 @@ label start
     "Во время урока класс был намного тише обычного. Даже мои мысли были громче, чем мой класс."
     "Кетрин молчит, Кёске сейчас тоже не особо радостный, ну а Майкл... Я был бы удивлён, если бы он один разговаривал."
 
-    show ca forma normal with dissolve 2
+    show ca forma normal size close with dissolve 2
 
     "Я не выдержал и повернулся к Кетрин. Почему именно к ней, а не к Кёске? Сам не знаю."
 
@@ -317,7 +324,7 @@ label start
     "Я сначала обрадовался, а потом вспомнил, что и эти напыщенные богатые сынки тоже не упустят такой шанс и поедут."
     "И как мне реагировать? Радоваться, или гневно думать предлог, под которым я могу не ехать."
 
-    show ca forma normal with dissolve 2
+    show ca forma normal size close with dissolve 2
 
     me "Катя."
     "Шепнул я девушке."
@@ -362,6 +369,7 @@ label start
     play sfx school_bell
 
     play ambience school_hallway_break
+    play music confession fadein 2
 
     "Спустя пять минут прозвенел звонок и ко мне обратился Кёске."
 
@@ -440,13 +448,16 @@ label start
     "Я постарался не разводить ссору, тем более в столовой, поэтому при первом же признаке на эту же ссору я решил сразу уйти."
     "Лишний раз мне не хватало ввязываться в скандалы. Хотя может я преувеличиваю и тут скандалом даже не пахло."
 
+    play ambience class_break fadein 2
+    play music meet_me_there fadein 2
+
     scene bg class_mc_break with fade 1 1 1 black
 
     "Я зашёл в класс и добровольно принял тот факт, что сидеть в школе мне ещё предстоит долго."
 
     play sfx school_bell
 
-    play ambience school_hallway_lesson fadein 2
+    play ambience class_lesson fadein 2
 
     scene bg class_mc_people with dissolve 2
 
@@ -462,6 +473,7 @@ label start
     "Надеюсь мои действия не приведут к войне с использованием тяжёлой техники."
 
     play ambience downtown_day fadein 2
+    play music summertime fadein 2
 
     scene bg school_far_day with fade 1 1 1 black
 
@@ -495,11 +507,13 @@ label start
     "Вот это заявление! Уж что что, а чтобы играть вместе с Эли. Хотя нет, до этого мне кажется я не дотянусь."
     "Возможно она просто преподаст мне пару уроков, а там и будь, что будет."
 
-    "Знаешь, это очень резкое, неожиданное предложение, мне надо бы подумать..."
+    me "Знаешь, это очень резкое, неожиданное предложение, мне надо бы подумать..."
 
     el "Чем быстрее я спрошу, тем быстрее я рассчитываю услышать ответ."
 
     me "А где играть-то будем?"
+
+    show el forma grin2 hands4
 
     el "Я вообще об этом и не думала, надеялась в этом на тебя."
 
@@ -526,7 +540,7 @@ label start
 
     me "Я не беспокоюсь, просто осторожность не помешает."
 
-    show el forma normal hands3
+    show el forma serious2 hands3
 
     el "Вот как?"
     "Она сделала задумчивое выражение лица."
@@ -584,6 +598,8 @@ label start
     "Она улыбнулась и сбавила шаг, предоставляя выбор маршрута мне."
     "Надеюсь, что всё обойдётся без проишествий, хотя с моей то кармой они могут случиться в любой момент."
 
+    play music reflection_on_water fadein 2
+
     scene bg akihibara_day_people 
     show el forma normal
     with fade 2 2 2 black
@@ -604,8 +620,14 @@ label start
     
     show el forma grin hands4
 
-    el "А почему спрашиваешь? Боишься?"
+    el "А почему спрашиваешь?"
+
+    show el ellie_l forma grin hands3 with dissolve
+
+    el "Боишься?"
     "Хитро улыбнулась девушка."
+
+    show el ellie_front forma grin hands4 with dissolve
 
     me "Да не боюсь я! Что за глупости?"
 
@@ -637,7 +659,7 @@ label start
 
     me "Не каждый день будешь идти рука об руку с внучкой Кобаяши Джуна. Вот и хочется узнать всё обо всём."
 
-    show el forma normal hands1
+    show el forma sadsmile hands1
 
     el "Ну если вкратце, то это ужасно скучно! Конечно есть и привилегии, например в школе меня знает и уважает чуть-ли не каждый ребёнок. Но опять же, мне этого не надо! Иногда я бы просто хотела жить, как нормальный человек, а не как оджё-сама. Хотелось жить - как ты."
 
@@ -659,11 +681,14 @@ label start
 
     me "Наверное."
 
+    play music reminiscences fadein 2
+
     scene bg house_mc_day with fade 1 1 1 black
 
     "Мы подошли к моему дому. Надеюсь его внешний вид её не отпугнёт.<w> Давно пора навести тут полный порядок."
 
     play ambience corridor_mc_day fadein 2
+    play music mistery_of_loneliness fadein 2
 
     scene bg corridor_mc_day 
     show el forma normal
@@ -674,7 +699,7 @@ label start
         show el forma smile
     }
 
-    "Мы зашли в дом. Эли молча разулась и прошлась по коридору, а после улыбнулась."
+    "Мы зашли в дом. Эли молча разулась и прошлась по коридору,<seq el_smile_corridor_mc> а после улыбнулась."
 
     me "Провести тут экскурсию?"
 
@@ -694,6 +719,7 @@ label start
     el "Ну пошли."
 
     play ambience room_mc_day fadein 2
+    play music reflections fadein 2
 
     scene bg room_mc_day
     show el forma normal 
@@ -825,8 +851,9 @@ label start
     "Я конечно не хотел этого, но придётся сделать ходку в магазин и обратно."
 
     play ambience downtown_sunset fadein 2
+    play music smooth_machine fadein 2
 
-    scene tokyo_street_sunset with dissolve 2
+    scene bg tokyo_street_sunset with dissolve 2
 
     "Я одел кроссовки и поплёлся в магазин."
 
@@ -882,6 +909,8 @@ label start
     "Мы около получаса посидели у меня и разговаривали о всяких пустяках за ужином. к сожалению (или, впрочем, к счастью) Химицу не стала долго задерживаться в моих хоромах и пошла домой."
 
     play ambience room_mc_night fadein 2
+    play music echo_avenue fadein 2
+
     scene bg room_mc_night with dissolve 2
 
     "А я с набитым желудком принял решение поспать. Завтра снова решать обычные и не совсем проблемы."

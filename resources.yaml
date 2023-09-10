@@ -2,8 +2,17 @@
   menu:
     bg:
       0:
+        name: tokyo_street_sunset
+        condition: "datetime.hour >= 17 && datetime.hour < 21"
+        twirl: false
+      1:
+        name: tokyo_street_night
+        condition: "datetime.hour >= 21 || datetime.hour < 7"
+        twirl: false
+      2:
         name: tokyo_street_day_birds
-        color: "#AC8E0E32"
+        condition: "datetime.hour >= 7 && datetime.hour < 17"
+        twirl: false
     # logos:
     #   0:
     #     asset: images/bg/backstage.jpg
@@ -16,6 +25,15 @@
   bg: 
     backstage: images/bg/backstage.jpg
     sky_night: images/bg/sky_night.jpg
+
+  sound:
+    confession: sounds/music/confession.ogg
+    meet_me_there: sounds/music/meet_me_there.ogg
+    reflection_on_water: sounds/music/reflection_on_water.ogg
+    reminiscences: sounds/music/reminiscences.ogg
+    silhouette_in_sunset: sounds/music/silhouette_in_sunset.ogg
+    smooth_machine: sounds/music/smooth_machine.ogg
+    
 
   positions:
     lleft: -0.25 -0.59
