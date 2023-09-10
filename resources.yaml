@@ -11,6 +11,7 @@
   scenarios: 
     day1: text/1_part.txt
     day2: text/2_part.txt
+    day3: text/3_part.txt
   
   bg: 
     backstage: images/bg/backstage.jpg

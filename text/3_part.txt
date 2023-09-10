@@ -1,0 +1,8 @@
+label start
+    time day
+
+    play ambience room_mc_morning fadein 2
+
+    scene bg room_mc_day with dissolve 2
+
+    "Мне снилось, что я был капитаном своего корабля, вальсирующего по волнам и проходя штормы."
