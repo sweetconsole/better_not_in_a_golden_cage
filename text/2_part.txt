@@ -1,4 +1,6 @@
 label start
+    backdrop "День второй"  bg el duration 5
+
     time day
 
     play ambience room_mc_day fadein 2
@@ -295,9 +297,9 @@ label start
 
     "Я не выдержал и повернулся к Кетрин. Почему именно к ней, а не к Кёске? Сам не знаю."
 
-    me "А почему так тихо?"
-
     show ca forma dontlike
+
+    me "А почему так тихо?"
 
     sequence ca_yes_teacher 
     {   
