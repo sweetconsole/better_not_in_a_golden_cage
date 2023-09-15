@@ -25,9 +25,11 @@
     day1: text/1_part.txt
     day2: text/2_part.txt
     day3: text/3_part.txt
+    day4: text/4_part.txt
   
   bg: 
     backstage: images/bg/backstage.jpg
+    sea_sunset: images/bg/sea_sunset.jpg
     sky_night: images/bg/sky_night.jpg
 
   sound:
@@ -38,6 +40,8 @@
     silhouette_in_sunset: sounds/music/silhouette_in_sunset.ogg
     smooth_machine: sounds/music/smooth_machine.ogg
     waltz_of_doubts: sounds/music/waltz_of_doubts.ogg
+
+    sea_beach: sounds/ambience/sea_beach.ogg
     
   positions:
     lleft: -0.25 -0.59
@@ -57,7 +61,7 @@
 
       <b>Спонсор</b>
       <br>
-      Meast
+      Хачапури
       <br>
 
       <b>Авторы фанфика</b>
