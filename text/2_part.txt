@@ -1,12 +1,13 @@
 label start
-    backdrop "День второй"  bg el duration 5
+    backdrop "День второй"  bg hi duration 5
 
     time day
 
-    play ambience room_mc_day fadein 2
+    play ambience room_mc_morning fadein 2
     play music autumn fadein 2
-
+    window hide
     scene bg room_mc_day with dissolve
+    window show
 
     "Проснулся я... Как обычно. Без головной боли, без ужасного состояния, просто проснулся."
     "Самое обычное утро, без всяких сюрпризов."
@@ -18,9 +19,12 @@ label start
     "Как же сейчас хорошо!"
     "Я раскрыл все двери, чтобы принять на себя лучи солнца, принять новый день."
 
+    play ambience corridor_mc_morning fadein 2
+    window hide
     scene bg corridor_mc_day
     show hi forma normal hands2
     with dissolve 2
+    window show
 
     "Хотел пойти на кухню, но неожиданно в дом зашла Химицу."
     "Видимо не так рано и я проснулся, где-то за пару минут до её прихода."
@@ -38,9 +42,12 @@ label start
 
     hi "Ну это ты конечно выдал! Пошли давай, приготовлю завтрак!"
 
+    play ambience kitchen_morning fadein 2
+    window hide
     scene bg kitchen_mc_day
     show hi forma normal hands2
     with dissolve 2
+    window show
 
     "Мы зашли на кухню. Она приступила к готовке, а я, словно ожидающая собачёнка сел и принялся ждать."
 
@@ -165,8 +172,9 @@ label start
     "Доев завтрак и не помыв посуду, мы ретировались из моего дома на улицу."
 
     play ambience downtown_day fadein 2
-
+    window hide
     scene bg house_mc_day with fade 1 1 1 black
+    window show
 
     "Мы вышли на улицу, но я тут же понял, что без куртки нельзя и вернулся за ней."
     "Химицу это поняла и не стала ничего уточнять. За столько лет она уже много что понимает обо мне."
@@ -176,10 +184,11 @@ label start
     "Давно не видел Химицу в каких-нибудь тёплых нарядах. Но уже вскоре дождусь и увижу."
 
     play music dont_care fadein 2
-
+    window hide
     scene bg tokyo_street_day 
     show hi forma normal hands2
     with fade 1 1 1 black
+    window show
 
     "Вообще все люди всегда чего-то ожидают, вся жизнь - сплошное ожидание."
     "Мы ждём отпуска, ждём когда приготовится еда, зимой мы ждём лето, а летом - зиму."
@@ -239,19 +248,23 @@ label start
     "Химицу улыбнулась. Да и я тоже."
 
     play music silhouette_in_sunset fadein 2
-
+    window hide
     scene bg school_near_day with fade 1 1 1 black
+    window show
 
     "За такими разговорами мы подошли к школе. Быстро однако."
 
     play ambience school_hallway_break fadein 2
-
+    window hide
     scene bg school_corridor_people with dissolve 2
+    window show
 
     "Мы вместе зашли в школу, переодели сменку и пошли по разным кабинетам."
     "И она только улыбнулась мне на прощанье."
 
+    window hide
     scene bg class_mc_break with dissolve 2
+    window show
 
     "Я же поднялся на второй этаж и неспеша зашёл в класс."
     "Присутствовали Кёске, Майкл, Кетрин."
@@ -282,7 +295,9 @@ label start
 
     "Я занял своё место ожидая начала рабочего дня.. <seq school_bell_text>И примерно через пару минут зашла Кагоме, прозвенел звонок."
 
+    window hide
     scene bg class_mc_people with dissolve 2
+    window show
 
     "И как ей удаётся приходить чуть-ли не секунда в секунду? Я еле-еле встаю с кровати, а у неё похоже полностью распланирован день, возможно даже поминутно."
     "Слава богу меня хоть Химицу выручает, а про то, как живёт Кагомэ я и знать не знаю."
@@ -369,9 +384,10 @@ label start
     "Ладно, потом расскажу всё Химицу, сейчас же настроимся на настоящее."
 
     play sfx school_bell
-
+    window hide
     play ambience school_hallway_break
     play music confession fadein 2
+    window show
 
     "Спустя пять минут прозвенел звонок и ко мне обратился Кёске."
 
@@ -383,7 +399,9 @@ label start
 
     "Майкл без всяких слов всё понял и пошёл с нами."
 
+    window hide
     scene bg school_canteen with fade 1 1 1 black
+    window show
 
     "В столовой все весело шумели в связи с будущей экскурсией."
     "Как неудивительно! Стоит внести в рабочие дни школьника какие-то изменения, так он сразу с энергичностью готов это обсуждать!"
@@ -452,16 +470,18 @@ label start
 
     play ambience class_break fadein 2
     play music meet_me_there fadein 2
-
+    window hide
     scene bg class_mc_break with fade 1 1 1 black
+    window show
 
     "Я зашёл в класс и добровольно принял тот факт, что сидеть в школе мне ещё предстоит долго."
 
     play sfx school_bell
 
     play ambience class_lesson fadein 2
-
+    window hide
     scene bg class_mc_people with dissolve 2
+    window show
 
     "Спустя некоторое время раздался звонок и кабинет наполнился толпой школьников и одним учителем."
     "Время шло неумолимо медленно, иногда вовсе казалось, что оно замирает."
@@ -476,8 +496,9 @@ label start
 
     play ambience downtown_day fadein 2
     play music summertime fadein 2
-
+    window hide
     scene bg school_far_day with fade 1 1 1 black
+    window show
 
     "Уроки закончились, я решил быстро собраться и пойти домой, всё равно меня сейчас никто в школе не ждёт и делать тут нечего."
     "И в этих словах я был абсолютно уверен... до этого момента точно."
@@ -601,10 +622,11 @@ label start
     "Надеюсь, что всё обойдётся без проишествий, хотя с моей то кармой они могут случиться в любой момент."
 
     play music reflection_on_water fadein 2
-
+    window hide
     scene bg akihibara_day_people 
     show el forma normal
     with fade 2 2 2 black
+    window show
 
     "В середине дня улицы Города уже были заполнены проезжающими машинами, криками детей, разговорами обычных работяг. Город живёт своей жизнью и я находился в этом потоке. Вроде самый обычный день, но всё равно как то, приятно на душе что-ли?"
 
@@ -684,17 +706,19 @@ label start
     me "Наверное."
 
     play music reminiscences fadein 2
-
+    window hide
     scene bg house_mc_day with fade 1 1 1 black
+    window show
 
     "Мы подошли к моему дому. Надеюсь его внешний вид её не отпугнёт.<w> Давно пора навести тут полный порядок."
 
     play ambience corridor_mc_day fadein 2
     play music mistery_of_loneliness fadein 2
-
+    window hide
     scene bg corridor_mc_day 
     show el forma normal
     with dissolve 2
+    window show
 
     sequence el_smile_corridor_mc 
     {
@@ -722,10 +746,11 @@ label start
 
     play ambience room_mc_day fadein 2
     play music reflections fadein 2
-
+    window hide
     scene bg room_mc_day
     show el forma normal 
     with dissolve 2
+    window show
 
     "Пару шагов, несколько секунд и вот мы в другой части моего дома."
 
@@ -779,7 +804,9 @@ label start
 
     "Ладно, раз тебе так хочется - то попробуем."
 
+    window hide
     scene cg day11_bass with dissolve 2
+    window show
 
     "Она кивнула, почистила и настроила гитару сыграла на неё пару партий."
     el "Как новенькая!"
@@ -789,10 +816,11 @@ label start
     "Но вскоре я смог научиться нескольким приёмчикам!"
 
     play ambience room_mc_day fadein 2
-
+    window hide
     scene bg room_mc_day
     show el forma normal 
     with dissolve 2
+    window show
 
     el "Ну вот! Не так уж и сложно, верно?"
 
@@ -841,21 +869,24 @@ label start
     "И что теперь делать? Если я пойду наедаться сейчас, то потом на еду Химицу уже не будет места, а если я буду ждать Химицу, то от голода по стенкам полезу."
 
     play ambience kitchen_sunset fadein 2
-
+    window hide
     scene bg kitchen_mc_sunset with dissolve 2
+    window show
 
     "Я покопался в холодильнике и не обнаружил ничего, что могло достаточно утолить мой голод."
 
     play ambience corridor_mc_sunset fadein 2
-
+    window hide
     scene bg corridor_mc_sunset with dissolve 2
+    window show
 
     "Я конечно не хотел этого, но придётся сделать ходку в магазин и обратно."
 
     play ambience downtown_sunset fadein 2
     play music smooth_machine fadein 2
-
+    window hide
     scene bg tokyo_street_sunset with dissolve 2
+    window show
 
     "Я одел кроссовки и поплёлся в магазин."
 
@@ -866,8 +897,9 @@ label start
     "Просто потому что тебе хочется всё это купить, а остальное неважно. Каким то магическим образом я решил вместо массового закупа обойтись чипсами и булкой."
 
     play ambience kitchen_sunset fadein 2
-
+    window hide
     scene bg kitchen_mc_sunset with fade 1 1 1 black
+    window show
 
     "Чуть позже я уже уминал пакет чипсов и при этом просматривая телевизор. Хоть как-то скоротаю время."
 
@@ -879,10 +911,11 @@ label start
     "Я услышал открывание двери, она не вынуждает тебя ждать и приходит вовремя."
 
     play ambience corridor_mc_sunset fadein 2
-
+    window hide
     scene bg corridor_mc_sunset
     show hi forma dontlike2 hands3
     with dissolve 2
+    window show
 
     hi "Опять бездельничаешь?"
     "Укоризненно спросила Химицу."
@@ -905,15 +938,17 @@ label start
     me "Солнце, я голоден, как никогда!"
 
     play ambience kitchen_sunset fadein 2
-
+    window hide
     scene bg kitchen_mc_night with dissolve 2
+    window show
 
     "Мы около получаса посидели у меня и разговаривали о всяких пустяках за ужином. к сожалению (или, впрочем, к счастью) Химицу не стала долго задерживаться в моих хоромах и пошла домой."
 
     play ambience room_mc_night fadein 2
     play music echo_avenue fadein 2
-
+    window hide
     scene bg room_mc_night with dissolve 2
+    window show
 
     "А я с набитым желудком принял решение поспать. Завтра снова решать обычные и не совсем проблемы."
     "И лучше всё это делать выспавшимся!"

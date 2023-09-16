@@ -49,13 +49,14 @@ label start
     "Я надел тапки и лениво поплёлся на кухню."
 
     window hide
+    play ambience corridor_mc_morning fadein 2
     scene bg corridor_mc_day with dissolve 1
     pause hard 1
+    play music take_a_deep_breath fadein 2
+    play ambience kitchen_morning fadein 2
     scene bg kitchen_mc_day 
     show hi forma normal hands2
     with dissolve 1
-
-    play music take_a_deep_breath fadein 2
 
     "В нос ударил ароматный запах яичницы. Я уверен, что по вкусу будет ничуть не хуже."
 
@@ -81,6 +82,7 @@ label start
     "Поэтому хочу день с приятными сюрпризами!"
 
     window hide
+    play ambience tokyo_street_day fadein 2
     scene bg tokyo_street_day 
     show hi forma smile hands2
     with fade 1 1 1 black
@@ -92,7 +94,7 @@ label start
 
     hi "Почему?"
 
-    me "Да вот поел вкусно!"
+    me "Да вот, поел вкусно!"
 
     hi "Да ну?"
 
@@ -184,7 +186,8 @@ label start
 
     "Ну беда. Уже Кагомэ не нахожу."
     "Ну и ладно! Обиженный за весь мир я уже размышлял о том, чтобы пойти домой."
-    
+
+    play music fractal fadein 2
     show el forma normal size far with dissolve 2
     
     "Но вдруг вместо Кагомэ на крышу вышла Эли."
@@ -198,7 +201,7 @@ label start
 
     me "Так мы вдвоём."
 
-    show el forma normal hands1 
+    show el forma serious2 hands4
 
     el "Ты понял, о чём я говорю."
 
@@ -238,12 +241,14 @@ label start
 
     el "А кто тогда будет решать все эти дела?"
 
-    show el forma surprise hands4
-
     me "А всё само решится."
     "Ответил я, пожав плечами."
 
+    show el forma surprise hands4
+
     el "Думаешь?"
+
+    play music new fadein 2
 
     "Конечно призывать Эли к бездельничеству я не хотел, скорее я посоветовал ей просто взять перерыв и уделить время себе."
 
@@ -311,6 +316,7 @@ label start
     "За это время может произойти масса проблем, надо быть ко всему готовым."
 
     play ambience downtown_day fadein 2
+    play music embers fadein 2
     window hide
     scene bg school_far_day with fade 1 1 1 black
 
@@ -336,6 +342,7 @@ label start
     "Я снял ботинки и аккуратно подошёл к кухне."
 
     play ambience kitchen_day fadein 2
+    play music sudden_trip fadein 2
     window hide
     scene bg kitchen_mc_day
     show ir suit smile hands2
@@ -345,7 +352,7 @@ label start
     "Увидев меня, она присела и закинула ногу на ногу."
 
     ir "Какой-то ты долгий, Николай!"
-    "Проговорила агент КГБ"
+    "Проговорила агент КГБ."
 
     show ir suit normal
 
@@ -372,6 +379,8 @@ label start
 
     me "Надеюсь не настолько сложный, где я могу умереть?"
 
+    show ir suit serious hands1
+
     ir "Знаешь, каждая работа опасна по своему. Стрелять умеешь?"
     "Она прищурилась."
 
@@ -389,16 +398,16 @@ label start
 
     ir "Ну будешь изредка выполнять разного рода задания, не требующей особой подготовки."
 
-    show ir suit surprise
-
     me "Знаете, я ведь даже свой ответ вам не дал." 
 
-    sequence ir_normal_fase
+    show ir suit surprise
+
+    sequence ir_normal_face
     {
         show ir suit normal
     }
 
-    "Ирина вдруг удивилась,<seq ir_normal_fase> но после переменилась в лице, которое показывало полное сосредоточение."
+    "Ирина вдруг удивилась,<seq ir_normal_face> но после переменилась в лице, которое показывало полное сосредоточение."
 
     ir "Просто вводим тебя в курс дела, даже если ты ещё не принял решение. Проще же знать, на что ты идёшь, верно?"
 
@@ -438,6 +447,7 @@ label start
     me "Ну что же, хорошо."
 
     play ambience corridor_mc_day fadein 2.0
+    play music burita fadein 2
     window hide
     scene bg corridor_mc_day
     show ir suit normal hands2
@@ -459,9 +469,12 @@ label start
     "Да это меня особо не волновало. Главное - узнать из-за чего так поступили с моими родителями, а так же помощь КГБ."
     "Надо решиться..."
 
+    time sunset
+
     play ambience room_mc_sunset fadein 2
     window hide
-    scene bg room_mc_sunset
+    scene bg room_mc_sunset with fade 2 2 2 black
+    window show
 
     "Прошло несколько часов с тех пор, как ушла Ирина."
     "Я просто слонялся по дому без единой цели. В голове вертелась лишь одна назойливая мысль."
@@ -475,6 +488,7 @@ label start
 
     window hide
     scene bg corridor_mc_sunset with dissolve 2
+    window show
 
     "Слегка треморными руками, я добрался до телефона и неспеша начал вводить номер моего друга."
     "Спустя мгновение послышались гудки, а после подошёл и владелец номера."
@@ -515,6 +529,8 @@ label start
     "Внезапно зазвонил телефон. Помимо Кёске больше на ум никто не приходил."
     "Я поднял трубку в надежде, что не случилось чего-либо такого, что могло бы отменить встречую."
 
+    play music popurri fadein 2
+
     me "Алло?"
 
     el "Привет, а я тебе звонила."
@@ -552,26 +568,31 @@ label start
     "Прекрасно! Вот и моя кара меня настигла."
     "Предыдущая проблема вдруг резко перестала иметь значение, ведь на её место пришла проблема более масштабная."
     "Теперь мне надо успеть в одно время прийти на две встречи в одном месте."
+
+    play music mistery_of_loneliness fadein 2
+
     "Я оделся и быстро пошёл в сторону центра, попутно прикидывая варианты развития событий."
 
     window hide
     scene bg house_mc_sunset with dissolve 2
     pause hard 1.5
+    play ambience downtown_sunset  fadein 2
     scene bg tokyo_street_sunset with dissolve 2
     window show
 
     "В крайнем случае я надеюсь, что кто-то из нас прояснит ситуацию."
     "Скорее всего это буду я. Надеюсь, что хотя-бы они смогут меня понять."
 
-    play ambience downtown_sunset fadein 2
     window hide
     scene bg akihibara_sunset with fade 1 1 1 black
+    window show
 
     "Прошло 15 минут и я уже оказался возле центра. Стоило бы выйти на видное место, но не хватает сил."
     "Кёске не видно, да и Эли. Вообще Кёске можно легко увидеть, он неплохо так выделяется своими габаритами."
     "А вот с Эли всё немного сложнее. Она может приехать на неизвестной мне машине, или вообще решит прийти пешком."
     "Она горазда на сюрпризы."
 
+    play music rockin fadein 2
     show el plate smile with dissolve 1
 
     el "Привет!"
@@ -603,7 +624,7 @@ label start
 
     me "Не знаешь? Такой толстый ещё?"
 
-    show el ellie_front_1 plate angry hands2
+    show el ellie_front_1 plate angry hands2 with dissolve 2
 
     el "Нет, ну я только что просила тебя об одном, а ты делаешь ровно противоположное!"
 
@@ -643,6 +664,7 @@ label start
     "От неё ни одного звука."
     "Я уже мог начать закипать, но похоже мой интерес был выше моих эмоций, так что я смиренно шёл за ней."
 
+    play music city_sleeps fadein 2
     window hide
     scene bg tokyo_street2_sunset with fade 1 1 1 black 
     window show
@@ -655,9 +677,10 @@ label start
     "Она шла с гордо поднятой головой. Небось довольна, что я за ней тут бегаю."
     "Прошло ещё 5 минут, прежде чем мы дошли."
 
-    play ambience sea_beach fadein 2
+    play music thoughts fadein 2
+    play ambience seashore fadein 2
     window hide
-    scene bg sea_sunset with fade 1 1 1 black
+    scene bg seashore with fade 1 1 1 black
     window show
 
     "Перед моим взором встала одинокая скамейка, расположенная вдали от толп людей."
@@ -666,11 +689,14 @@ label start
     "Рядом выстеленная какая-то гранитная, или кирпичная дорожка."
     "Но в основном всё здесь окружает свежескошенная трава."
     "Но главное в этом месте - это вид, открывающийся на море."
+
+    play music misty_dream fadein 2
+
     "Здесь так спокойно. Даже невольно боишься вздохнуть громче обычного, чтобы не нарушить эту таинственную, полную мраком тишину."
     "Кажется, что даже воздух нагоняет атмосферу первозданной и величественной природы."
     "Наконец она спросила."
 
-    show el plate normal with dissolve 2
+    show el plate smile hands3 with dissolve 2
 
     el "Ну как, нравится?"
 
@@ -679,9 +705,13 @@ label start
     me "Это...<w>очень...<w>завораживает."
     "Чеканя каждое слово произнёс я."
 
+    show el plate shy
+
     el "Красивое место. Иногда я прихожу сюда, чтобы уединиться, просто посидеть, посмотреть вдаль."
 
     me "Не думал, что ты можешь быть такой."
+
+    show el plate surprise hands4
 
     el "Какой?"
 
@@ -730,6 +760,9 @@ label start
 
     "Она немного помолчала, затем снова продолжила."
 
+    play music in_this_very_moment fadein 2
+    show el plate shy hands3
+
     el "А вот любовь."
 
     "Ну вот начался тот момент, когда следует с хирургической точностью подбирать нужные слова!"
@@ -754,10 +787,15 @@ label start
 
     "Мы оба придвинулись настолько близко друг к другу, что расстояние между нашими лицами было несколько сантиметров."
     "Ну и уже с помощью неведомой мне силы, я свёл расстояние наших губ к минимуму."
-    "Сливались в поцелуе мы долго, словно это был для неё первый раз, который она хочет запомнить."
+    
+    show el plate shy size close with dissolve 2
 
+    "Сливались в поцелуе мы долго, словно это был для неё первый раз, который она хочет запомнить."
     "Скорее всего это должно было произойти. Но вот как к этому отнесутся в школе её и мои друзья - неизвестно."
     "Наконец мы закончили. Целуется она неплохо, но похоже всё же это её первый раз."
+
+    show el plate shy size normal with dissolve 2
+
     "Задавать же вопрос об этом я не стал."
 
     "Удивительно, но за всё это время мимо нас не прошёл ни один человек."
@@ -789,6 +827,8 @@ label start
 
     "Мы неспеша встали и пошли по той дороге, по которой шли сюда первоначальным путём."
 
+    time night
+
     play ambience downtown_night fadein 2
     window hide
     scene bg tokyo_street2_night
@@ -810,6 +850,7 @@ label start
     "Даже каким-то образом взяли себе по мороженному."
     "Хотя время уже позднее, почти все магазины закрыты."
 
+    play music arctic_lakes_in_your_pure_eyes fadein 2
     stop ambience fadeout 2
     window hide
     scene bg black with fade 2 2 2 black
@@ -853,6 +894,9 @@ label start
 
     "После я забежал на кухню и увидел там записку."
     "С недоверием я начал приближаться к ней, попутно думая. От кого могла быть эта записка?"
+
+    play music im_so_glad_weve_met fadein 2
+
     "Но увидев почерк, я со спокойствием выдохнул, это записка от Химицу."
 
     mode nvl

@@ -29,7 +29,7 @@
   
   bg: 
     backstage: images/bg/backstage.jpg
-    sea_sunset: images/bg/sea_sunset.jpg
+    seashore: images/bg/seashore.jpg
     sky_night: images/bg/sky_night.jpg
 
   sound:
@@ -41,7 +41,7 @@
     smooth_machine: sounds/music/smooth_machine.ogg
     waltz_of_doubts: sounds/music/waltz_of_doubts.ogg
 
-    sea_beach: sounds/ambience/sea_beach.ogg
+    seashore: sounds/ambience/seashore.ogg
     
   positions:
     lleft: -0.25 -0.59

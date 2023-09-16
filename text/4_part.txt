@@ -238,7 +238,7 @@ label start
     
     play ambience class_lesson fadein 2.0
     window hide
-    scene bg class_mc_lesson with dissolve 2
+    scene bg class_mc_people with dissolve 2
     window show
     
     "Урок тем временем начался. А вообще хорошо вчера всё было! Я мог бы остаться виновником, потому что назначил две встречи в одно время. Повезло, что Кёске мне помог, сам того не понимая, или всё таки помогла Сая, или оба?"
