@@ -28,7 +28,7 @@ label start
 
     "Пройдя весь дом и точно убедившись в её отсутствии, я сел на край своей кровати."
 
-    play sfx door_fists_punch
+    play sfx wood_knock_far
 
     "Просидев минут 5 в дверь раздался стук. Неужели Химицу? Я мигом поднялся с насиженного места и в приподнятом настроении пошёл открывать Химицу."
     "Предвкушая сегодняшний её завтрак у меня появился зверский аппетит."
@@ -37,6 +37,7 @@ label start
     window hide
     scene bg corridor_mc_day with dissolve 2
     window show
+    play sfx door_open_keys
 
     "Открыв дверь, я не увидел перед собой того, кого ожидал."
 
@@ -236,6 +237,7 @@ label start
 
     "Кёске вернулся на своё место. Само собой зла я на него не держу, но вот предупредить бы он мог. Если Эли мне тогда не позвонила и не предложила встретиться, вчерашний день пошёл бы совсем под откос."
     
+    play sfx school_bell
     play ambience class_lesson fadein 2.0
     window hide
     scene bg class_mc_people with dissolve 2
@@ -244,6 +246,9 @@ label start
     "Урок тем временем начался. А вообще хорошо вчера всё было! Я мог бы остаться виновником, потому что назначил две встречи в одно время. Повезло, что Кёске мне помог, сам того не понимая, или всё таки помогла Сая, или оба?"
     "В любом случае получилось всё лучше ожидаемого. Довольный своей удаче и парочке неожиданных обстоятельств, я уставился в окно и просидел так весь урок."
 
+    pause hard 2
+
+    play sfx school_bell
     play ambience class_break fadein 2.0
     window hide
     scene bg class_mc_break 
@@ -259,6 +264,7 @@ label start
 
     play ambience school_roof_birds fadein 2.0
     window hide
+    play sfx door_wind_stairwell fadein 1
     scene bg school_roof_day
     show ca forma normal
     with fade 1 1 1 black

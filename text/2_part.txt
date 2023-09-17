@@ -3,6 +3,7 @@ label start
 
     time day
 
+    play sfx alarm_clock forceloop true fadein 2
     play ambience room_mc_morning fadein 2
     play music autumn fadein 2
     window hide
@@ -10,6 +11,9 @@ label start
     window show
 
     "Проснулся я... Как обычно. Без головной боли, без ужасного состояния, просто проснулся."
+
+    play sfx alarm_clock_hit
+
     "Самое обычное утро, без всяких сюрпризов."
 
     "По идее, сегодня ко мне может прийти Химицу и разбудить меня в школу."
@@ -25,6 +29,8 @@ label start
     show hi forma normal hands2
     with dissolve 2
     window show
+
+    play sfx door_open_close_light 
 
     "Хотел пойти на кухню, но неожиданно в дом зашла Химицу."
     "Видимо не так рано и я проснулся, где-то за пару минут до её прихода."
@@ -49,7 +55,13 @@ label start
     with dissolve 2
     window show
 
-    "Мы зашли на кухню. Она приступила к готовке, а я, словно ожидающая собачёнка сел и принялся ждать."
+    sequence food_preparing_moment
+    {
+        volume sfx 0.4
+        play sfx food_preparing forceloop true fadein 2
+    }
+
+    "Мы зашли на кухню.<seq food_preparing_moment> Она приступила к готовке, а я, словно ожидающая собачёнка сел и принялся ждать."
 
     hi "Что вчера делал?"
 
@@ -117,6 +129,11 @@ label start
     hi "Я уже привыкла к такому, тебе незачем извиняться."
 
     "Господи, да я провалился во всех темах с Химицу за сверхкороткое время!"
+
+    volume sfx 1
+
+    stop sfx fadeout 2
+
     "Пока проклинал себя за излишнюю вспыльчивость, завтрак уже был готов и накрыт на стол."
     "И всё же Химицу хозяйственная девушка, даже не знаю человека, который справляется с этой работой лучше неё."
     "Я начал уплетать завтрак с долей энтузиазма, да и перестал замечать всё живое вокруг."
@@ -399,6 +416,7 @@ label start
 
     "Майкл без всяких слов всё понял и пошёл с нами."
 
+    play ambience canteen fadein 2
     window hide
     scene bg school_canteen with fade 1 1 1 black
     window show

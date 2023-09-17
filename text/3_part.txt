@@ -16,7 +16,13 @@ label start
     window show
 
     "Вот и наступил новый день. Я открыл и почесал заспанные глаза."
+
+    play sfx steps_heavy fadein 1
+
     "Из кухни послышались тихие шаги."
+
+    stop sfx
+
     "Вот и Химицу. Интересно, это она пришла рано, или я поздно встал?"
 
     show hi forma dontlike2 hands3 with dissolve 2
@@ -156,6 +162,7 @@ label start
     play sfx school_bell
     window hide
     scene bg class_mc_people with dissolve 2
+    window show
 
     "Прозвенел звонок и все за несколько секунд привели себя в порядок и подготовились к уроку."
     "Разумеется я не готовился."
@@ -168,12 +175,15 @@ label start
     play ambience class_break fadein 2
     window hide
     scene bg class_mc_break with dissolve 2
+    window show
 
     "Прошёл урок, на котором я в очередной раз погряз в размышлениях."
 
+    play sfx school_bell
     play ambience school_hallway_break fadein 2
     window hide
     scene bg school_corridor with dissolve 2
+    window show
 
     "Решил пойти на крышу, где заведомо встречу Кагомэ."
     "Просто решил с ней мило поболтать, всё равно пока всем не до меня."
@@ -181,6 +191,7 @@ label start
     play ambience school_roof_birds fadein 2
     window hide
     scene bg school_roof_day with dissolve 2
+    window show
 
     "Поднявшись на крышу я никого не увидел."
 
@@ -189,10 +200,15 @@ label start
 
     play music fractal fadein 2
     show el forma normal size far with dissolve 2
-    
+    volume sfx 0.5
+    play sfx door_wind_stairwell
+
     "Но вдруг вместо Кагомэ на крышу вышла Эли."
 
     me "Эли! Какая встреча..."
+
+    stop sfx
+    volume sfx 1
 
     show el forma normal hands2 size normal with dissolve 2
 
@@ -309,6 +325,7 @@ label start
     stop ambience fadeout 2
     window hide
     scene bg black with fade 1 1 1 black
+    window show
 
     "Остальное время в школе я размышлял над словами Эли."
     "Похоже всё таки они меня мотивировали в чём то. Надо хоть как-то контролировать ситуацию."
@@ -319,12 +336,13 @@ label start
     play music embers fadein 2
     window hide
     scene bg school_far_day with fade 1 1 1 black
+    window show
 
     "Я вышел из школы и быстренько поплёлся к дому."
 
     window hide
-
     scene bg tokyo_street_day with dissolve 2
+    window show
 
     "По пути я также подумал и решил погулять с Химицу."
     "Надо же с ней хоть как-то развлекаться, а не проводить с ней время на кухне и изредка в школе. Ещё я забежал за продуктами, а иначе так и в холодильнике ничего из съестного не останется."
@@ -334,6 +352,7 @@ label start
     play ambience corridor_mc_day fadein 2
     window hide
     scene bg corridor_mc_day with dissolve 2
+    window show
 
     "Я дошёл до дома и на пороге посеялись сомнения."
     "Здесь точно кто-то есть, помимо меня."
@@ -347,6 +366,7 @@ label start
     scene bg kitchen_mc_day
     show ir suit smile hands2
     with dissolve 2
+    window show
 
     "Там расположилась Ирина с улыбчивым и загадочным взглядом."
     "Увидев меня, она присела и закинула ногу на ногу."
@@ -452,6 +472,7 @@ label start
     scene bg corridor_mc_day
     show ir suit normal hands2
     with dissolve 2
+    window show
 
     "Она встала и перед уходом напоследок кинула."
 
@@ -489,9 +510,18 @@ label start
     window hide
     scene bg corridor_mc_sunset with dissolve 2
     window show
+    play sfx phone_disk
 
     "Слегка треморными руками, я добрался до телефона и неспеша начал вводить номер моего друга."
+
+    play sfx phone_international
+
     "Спустя мгновение послышались гудки, а после подошёл и владелец номера."
+
+    stop sfx fadeout 2
+    window hide
+    scene cg day3_phone with dissolve 2
+    window show
 
     kyo "Алло?"
 
@@ -517,6 +547,11 @@ label start
 
     me "Хорошо!"
 
+    play sfx phone_put
+    window hide
+    scene bg corridor_mc_sunset with dissolve 2
+    window show
+
     "Как иногда хорошо иметь человека, который может без какого-либо лицемерия и корысти поддержать тебя и уделить время."
     "Моё настроение вмиг поднялось на такой уровень, что я чуть ли не вприпрыжку начал собираться."
     "Ощущение, будто я только что в лотерее выиграл огромный куш и пытаюсь трясущимися от волнения руками позвонить родным и рассказать им об этом."
@@ -526,10 +561,16 @@ label start
     "Поэтому я хотел бы жить так же, как и сейчас, но при этом не задумываться о будущем."
     "Или как максимум сдам на права и куплю машину."
 
+    play sfx phone_ringing
+
     "Внезапно зазвонил телефон. Помимо Кёске больше на ум никто не приходил."
     "Я поднял трубку в надежде, что не случилось чего-либо такого, что могло бы отменить встречую."
 
+    stop sfx
     play music popurri fadein 2
+    window hide
+    scene cg day3_phone
+    window show
 
     me "Алло?"
 
@@ -557,14 +598,33 @@ label start
 
     el "Отлично, тогда через 30 минут в центре!"
 
-    "Она положила трубку, а я сразу начал набирать Кёске."
+    play sfx phone_put
+
+    sequence phone_disk_bell
+    {
+        play sfx phone_disk pause 1 crossfade
+    }
+
+    "Она положила трубку,<seq phone_disk_bell> а я сразу начал набирать Кёске."
+
+    play sfx phone_international
+
     "Снова телефонные гудки и сиюминутное затишье."
+
+    stop sfx fadeout 1
+
     "Наконец с другого провода подняли трубку."
 
     me "Алло? Кёске?"
 
     "Но не тут то было, со мной говорил не Кёске."
     "Ответила его мама и сказала, что он уже пошёл на встречу со мной."
+
+    play sfx phone_put
+    window hide
+    scene bg corridor_mc_sunset with dissolve 2
+    window show
+
     "Прекрасно! Вот и моя кара меня настигла."
     "Предыдущая проблема вдруг резко перестала иметь значение, ведь на её место пришла проблема более масштабная."
     "Теперь мне надо успеть в одно время прийти на две встречи в одном месте."
@@ -850,11 +910,12 @@ label start
     "Даже каким-то образом взяли себе по мороженному."
     "Хотя время уже позднее, почти все магазины закрыты."
 
-    play music arctic_lakes_in_your_pure_eyes fadein 2
     stop ambience fadeout 2
+    play music arctic_lakes_in_your_pure_eyes fadein 2
     window hide
     scene bg black with fade 2 2 2 black
     window show
+    play sfx car_drove_up fadein 1
 
     "Наконец машина подъехала, и мы вялые и измученные от сегодняшнего дня запихнулись в машину."
     "Сама поездка для меня была недолгой. Но за это время я 3 раза чуть не уснул в авто."
@@ -884,6 +945,7 @@ label start
     window hide
     scene bg corridor_mc_night2 with dissolve 2
     window show
+    play sfx door_open_keys
 
     "Зайдя в дом, я с лёту скинул с себя ботинки и принялся переодеваться в домашнюю одежду."
 
@@ -907,7 +969,7 @@ label start
 
     mode adv
 
-    "Домашнее задание? Я уже давно его не делал. Лучше уж поем, хоть спать хочется нечеловечески сильно."
+    "Домашнее задание?<w> Я уже давно его не делал. Лучше уж поем, хоть спать хочется нечеловечески сильно."
 
     play ambience room_mc_night fadein 2
     window hide
