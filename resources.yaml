@@ -26,6 +26,7 @@
     day2: text/2_part.txt
     day3: text/3_part.txt
     day4: text/4_part.txt
+    day5: text/5_part.txt
   
   bg: 
     backstage: images/bg/backstage.jpg

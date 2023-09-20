@@ -1,5 +1,10 @@
 label start
 
-    backdrop "День четвёртый" bg hi_ca duration 5
+    backdrop "День пятый" bg hi_ca duration 5
 
     time day
+
+    play music room_mc_morning fadein 2
+    scene bg room_mc_day with fade 2 2 2 black
+
+    "Честно сказать, давно я так хорошо не высыпался."
