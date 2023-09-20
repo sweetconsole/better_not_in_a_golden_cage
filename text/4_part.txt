@@ -1,6 +1,6 @@
 label start
 
-    backdrop "День четвёртый"  bg ca duration 5
+    backdrop "День четвёртый" bg ca duration 5
 
     time day
 
@@ -14,9 +14,9 @@ label start
 
     "Спал я плохо. Изредка вставая с кровати и выпивая воды, я ворочался и из разу в раз продолжал свои потуги уснуть крепким сном."
 
-    play ambience room_mc_morning fadein 2
     window hide
     scene bg room_mc_day with fade 1 1 1 black
+    play ambience room_mc_morning crossfade fadein 1
     window show
 
     "Наконец наступило утро. Ещё бы недели две назад я сказал, что все мои дни понемногу скатываются в рутину. Однако же с недавних пор, я будто начал ощущать новые эмоции."
@@ -33,9 +33,9 @@ label start
     "Просидев минут 5 в дверь раздался стук. Неужели Химицу? Я мигом поднялся с насиженного места и в приподнятом настроении пошёл открывать Химицу."
     "Предвкушая сегодняшний её завтрак у меня появился зверский аппетит."
 
-    play ambience corridor_mc_morning fadein 2
     window hide
     scene bg corridor_mc_day with dissolve 2
+    play ambience corridor_mc_morning crossfade fadein 1
     window show
     play sfx door_open_keys
 
@@ -69,11 +69,11 @@ label start
 
     "Она улыбнулась и вошла в моё пристанище."
 
-    play ambience kitchen_morning fadein 2
     window hide
     scene bg kitchen_mc_day
     show el forma normal 
     with dissolve 2
+    play ambience kitchen_morning crossfade fadein 1
     window show
 
     el "Да не такой уж у тебя и бардак! Ещё и получше видали!"
@@ -87,19 +87,19 @@ label start
 
     el "Ты сначала оденься, а потом уже пойдём."
 
-    play ambience room_mc_morning fadein 2
     window hide
     scene bg room_mc_day with dissolve 2
+    play ambience room_mc_morning crossfade fadein 1
     window show
 
     "Ах да, я же не особо одет. Я слегка покраснел и быстро ретировался в свою комнату."
     "Прекрасно! Первый день с Эли, а я уже успел побывать перед её взором в нижнем белье! Быстренько накинув на себя школьную форму, я вышел из комнаты и снова увидел Эли, сидящую на стуле и с интересом рассматривая мой сад."
     
-    play ambience kitchen_morning fadein 2
     window hide
     scene bg kitchen_mc_day 
     show el forma normal
     with dissolve 2
+    play ambience kitchen_morning crossfade fadein 1
     window show
     
     "Надо же, это событие с ней даже завораживает. Я ещё немного посмотрел на эту картину и решил, что пора бы уже и выдвигаться."
@@ -122,11 +122,11 @@ label start
 
     "Она кивнула и молча собралась, после чего мы вышли и пошли в сторону школы."
 
-    play ambience tokyo_street_day fadein 2
     window hide
     scene bg tokyo_street_day_birds 
     show el forma normal
     with fade 1 1 1 black
+    play ambience tokyo_street_day crossfade fadein 1
     window show
 
     "Да, я помню про речи Ирины, кажется она говорила особо не высовываться и не светиться, но тут уж такое дело, что и КГБ может подождать."
@@ -174,16 +174,16 @@ label start
 
     "Мы общались и не заметили, как дошли до школы. Похоже гневных взглядов Кетрин и Химицу вскоре не избежать. Хотя скорее всего Кетрин на это будет по барабану. Она же опять закатит глаза и будет делать безразличную мордочку, как и всегда."
     
-    play ambience school_hallway_break fadein 2
     window hide
     scene bg school_corridor_people with dissolve 2
+    play ambience school_hallway_break crossfade fadein 1
     window show
 
     "Мы с Эли зашли в школу, переоделись и разошлись по своим классам. Очередной день, на котором мне снова забываться в себе и жить от звонка, до звонка."
 
-    play ambience class_break fadein 2
     window hide
     scene bg class_mc_break with dissolve 2
+    play ambience class_break crossfade fadein 1
     window show
 
     "Я немного побродил по школе и через пару минут я зашёл в класс. Чёрт! Да я же забыл поесть! Похоже теперь меня до конца уроков будут искушать придуманные мною вкуснейшие деликатесы и выпечка."
@@ -238,9 +238,9 @@ label start
     "Кёске вернулся на своё место. Само собой зла я на него не держу, но вот предупредить бы он мог. Если Эли мне тогда не позвонила и не предложила встретиться, вчерашний день пошёл бы совсем под откос."
     
     play sfx school_bell
-    play ambience class_lesson fadein 2.0
     window hide
     scene bg class_mc_people with dissolve 2
+    play ambience class_lesson crossfade fadein 1
     window show
     
     "Урок тем временем начался. А вообще хорошо вчера всё было! Я мог бы остаться виновником, потому что назначил две встречи в одно время. Повезло, что Кёске мне помог, сам того не понимая, или всё таки помогла Сая, или оба?"
@@ -249,11 +249,11 @@ label start
     pause hard 2
 
     play sfx school_bell
-    play ambience class_break fadein 2.0
     window hide
     scene bg class_mc_break 
     show ca forma normal
     with dissolve 2
+    play ambience class_break crossfade fadein 1
     window show
 
     "На перемене ко мне подошла Кетрин и со спокойным лицом сказала:"
@@ -262,12 +262,12 @@ label start
 
     "Я удивился, но видом не показал, а лишь пошёл за ней. Что ещё ей могло прийти на ум? Она снова будет делать разборы полётов по поводу наших отношений, или будет что-то из ряда вон выходящее?"
 
-    play ambience school_roof_birds fadein 2.0
     window hide
     play sfx door_wind_stairwell fadein 1
     scene bg school_roof_day
     show ca forma normal
     with fade 1 1 1 black
+    play ambience school_roof_birds crossfade fadein 1
     window show
 
     "Я даже не могу догадаться, насколько она непонятная личность! Она повела меня на крышу, где стояла прохладная погода, еле-еле грело солнце и пролетали птицы. Удивительно, но Кагомэ здесь снова не оказалось."
@@ -368,9 +368,9 @@ label start
     "Прозвенел звонок, этот разговор был очень тяжёлый, я до сих пор не пришёл в себя от услышанного. Взглянув в глаза Кетрин и улыбнувшись, я развернулся и пошёл к выходу."
     "Я просто хочу домой, нужно время, чтобы перевести дух, а лучше в бар, но на выпивку у меня не было никаких сил, да и пить сейчас не лучшее время."
 
-    play ambience tokyo_street_day fadein 2
     window hide
     scene bg tokyo_street_day_birds with fade 2 2 2 black
+    play ambience tokyo_street_day crossfade fadein 1
     window show
 
     "Засеменив домой, я постоянно ловил себя на совершенно разных мыслях. Например Кетрин была беременна, а я почему-то думаю над завтрашней экскурсией."
@@ -379,20 +379,20 @@ label start
     "Хотя знать ей и не надо, не вижу смысла. А если у Кати до сих пор есть ко мне чувства - то всё будет очень плохо. Даже не знаю, что она может сделать, хотя хочет ли она что-либо делать?"
     "Думаю, что ответ я узнаю на этой неделе."
 
-    play ambience corridor_mc_day fadein 2
     window hide
     scene bg corridor_mc_day with fade 2 2 2 black
+    play ambience corridor_mc_day crossfade fadein 1
     window show
 
     "Войдя в дом, я почувствовал что-то неладное, здесь кто-то есть. Точно, это Ирина!"
     "Она же говорила, что сегодня хочет услышать от меня ответ! Прямо сейчас она сидит и ждёт меня, моего решения, с которым я даже не определился. Да что не определился - я совсем напрочь про это забыл! "
     "У меня есть только считанные минуты, чтобы определиться с выбором. Если я откажусь - значит так и останусь ни с чем. Если же пойду на её условия - то возможно смогу отколоть себе кусочек какой-то важной информации."
 
-    play ambience kitchen_day fadein 2
     window hide
-    scene bg corridor_mc_day 
+    scene bg kitchen_mc_day 
     show ir ir_2 suit smile
     with dissolve 2
+    play ambience kitchen_day crossfade fadein 1
     window show
 
     "Я зашёл на кухню, где сидела Ирина. Она посмотрела на меня с улыбкой, словно уже знала мой ответ."
@@ -436,9 +436,9 @@ label start
 
     "Ирина встала, спокойно прошла мимо меня и тихо вышла, будто её здесь и не было."
 
-    play ambience room_mc_day fadein 2
     window hide
     scene bg room_mc_day with dissolve 2
+    play ambience room_mc_day crossfade fadein 1
     window show
 
     "Я же, недолго думая, выпил воды и лёг в кровать, всё равно делать нечего, но так хотя бы высплюсь. Да всё равно сейчас только час дня и все в школе..."
@@ -450,11 +450,13 @@ label start
     scene bg black with dissolve 2
     window show
 
+    pause hard 2
+
     "Спал я хорошо, меня ничего не тревожило. Так хорошо я давно не высыпался."
 
-    play ambience room_mc_day fadein 2
     window hide
     scene bg room_mc_day with dissolve 2
+    play ambience room_mc_day crossfade fadein 1
     window show
 
     "Я проснулся и взглянул на часы. Оказалось, что только 4 часа дня. Все уже закончили уроки, да и мне пора бы заняться каким-нибудь делом, а то так всё на свете и просплю."
@@ -463,9 +465,9 @@ label start
 
     "Провалявшись ещё минут 10 в кровати, я услышал звонок телефона. Кому я мог понадобиться? Неужели Химицу, или Кетрин? Хотя почему именно им?"
 
-    play ambience corridor_mc_day fadein 2
     window hide
     scene bg corridor_mc_day with dissolve 2
+    play ambience corridor_mc_day crossfade fadein 1
     window show
 
     "Я встал, подошёл к телефону и взял трубку."
@@ -487,7 +489,7 @@ label start
 
     "Знакомый голос, где-то давно я его уже слышал. Я напряг свою память, перебирая всех знакомых женщин с таким голосом."
 
-    mrs "Раз ты уже всё знаешь, то не вижу смысла тебе всё рассказывать."
+    sar2 "Раз ты уже всё знаешь, то не вижу смысла тебе всё рассказывать."
 
     "Точно! Это же мать Кетрин. И как я вообще мог забыть её голос?"
 
@@ -506,9 +508,9 @@ label start
 
     "Вообще Миссис Винтерс - очень странный и непредсказуемый человек. Похоже выхода у меня нет, придётся прийти к ней на встречу."
 
-    play ambience room_mc_day fadein 2
     window hide
     scene bg room_mc_day with dissolve 2
+    play ambience room_mc_day crossfade fadein 1
     window show
 
     "Последние пару минут я просто сидел в оцепенении, ведь я поговорил с человеком, которого хотел видеть меньше всего. Шерил Винтерс, она же мать Кетрин. Холодная и рассчётливая женщина. Она может потрепать мне нервы одним своим присутствием."
@@ -517,9 +519,9 @@ label start
 
     "Надо идти, всё таки опаздывать неприлично, хотя в её случае, я хотел опоздать минут так на неделю. Я оделся и пошёл на назначенную встречу."
 
-    play ambience tokyo_street_day fadein 2
     window hide
     scene bg tokyo_street_day_birds with fade 2 2 2 black
+    play ambience tokyo_street_day crossfade fadein 1
     window show
 
     "Меня продувал прохладный ветер со всех сторон."
@@ -532,9 +534,9 @@ label start
 
     "Пару поворотов сюда, потом налево, тут пройти пару магазинчиков, завернуть в переулок. Всё это давно отточенный маршрут, по которому я мог ходить с завязанными глазами, только вот это мне сейчас не особо поможет."
 
-    play ambience tokyo_street_day fadein 2
     window hide
     scene bg tokyo_street_day with fade 2 2 2 black
+    play ambience tokyo_street_day crossfade fadein 1
     window show
 
     "Подобравшись к их старому дому, я никого не обнаружил, лишь изредка наблюдал проходящих мимо работяг, которые просто занимаются своей работой. Может она опаздывает?"
@@ -589,11 +591,11 @@ label start
 
     me "Предположим, что я соглашусь на ваше предложения, но что мне надо делать?"
 
-    show mr suit dontlike
+    show mrs suit dontlike
 
     "Она недоверчиво и с презрением в глазах на меня взглянула. Господи, да почему каждый считает своей обязанностью заставить меня что-то для кого-то сделать?!"
 
-    show mr suit normal hands1
+    show mrs suit normal hands1
 
     mrs "Тебе просто нужно найти компромат абсолютно любого характера. Компромат должен быть достаточно веским, чтобы дать понять другим людям, что мы настроены серьёзно."
 
@@ -628,18 +630,18 @@ label start
 
     "Понемногу смеркалось, но мне не хотелось идти домой. Хочу какой-нибудь альтернативы, например пойти в рок клуб, давненько я туда не заходил."
 
-    play ambience downtown_day fadein 2
     window hide
     scene bg club_outside_day with fade 2 2 2 black
+    play ambience downtown_day crossfade fadein 1
     window show
 
     "Подходя к клубу, я заприметил недалеко стоящую машину. Сам по себе автомобиль выглядел роскошно, что совершенно не характерно для этого места."
     "Похоже громилы Джуна доставили сюда Эли, а значит намечается концерт в её исполнении. И всё же странно, я встречаюсь с Эли, но мы так мало уделяем время друг другу."
     "Позову её куда-нибудь сходить вместе, так и я узнаю о ней немного, да и она обо мне."
 
-    play ambience club fadein 2
     window hide
     scene bg club_inside_crowd with dissolve 2
+    play ambience club crossfade fadein 1
     window show
 
     "Зайдя в это громкое место, сопровождающее всё это смесью запахов различных напитков, а также смутную видимость из-за прокуренных лёгких этого заведения, я уселся ближе к бару, дабы отведать очередную дозу алкоголя и на радостях здесь посидеть."
@@ -661,9 +663,9 @@ label start
 
     "Я выпил ещё немного и концерт Эли уже успел закончится. Ну хорошего всегда дают понемногу, хотя мне кажется, если бы я и дальше продолжил её слушать, то я бы обязательно кричал тосты в её честь, и в итоге вырубился прямо тут."
 
-    play ambience downtown_night fadein 2
     window hide
     scene bg club_outside_night_people with fade 2 2 2 black
+    play ambience downtown_night crossfade fadein 1
     window show
 
     "Я не стал испытывать свой организм дальше и решил покончить с сегодняшней попойкой. Надо выйти на улицу, подышать воздухом, а там и Эли разыщу."
@@ -676,14 +678,16 @@ label start
 
     "Похоже всё же она меня видела, ну или ей мог кто-то доложить. Впрочем неважно."
 
-    stop ambience fadeout 2
-    window hide
-    scene bg black with dissolve 2
-    window show
-
     el "Ник! Садись быстрей!"
 
     "На ходу я запрыгнул в авто и мы двинулись в непонятном мне направлении."
+
+    stop ambience fadeout 2
+    window hide
+    scene bg car_outside 
+    show el kojanka normal
+    with dissolve 2
+    window show
 
     "Я с лёту задал терзающий меня вопрос."
 
@@ -751,11 +755,11 @@ label start
 
     el "Дом, милый дом."
 
-    play ambience downtown_night fadein 2
     window hide
     scene bg house_mc_night2 
     show el kojanka normal
     with fade 1 1 1 black
+    play ambience downtown_night crossfade fadein 1
     window show
 
     "Я вдохнул полной грудью и зашагал в сторону моего жилища."
@@ -768,11 +772,11 @@ label start
     "Казалось, что сердце работало с небольшими остановками."
     "Всё, пусть как будет, так будет."
 
-    play ambience corridor_mc_night fadein 2
     window hide
     scene bg corridor_mc_night 
     show el kojanka normal
     with dissolve 2
+    play ambience corridor_mc_night crossfade fadein 1
     window show
 
     "Я открыл дверь и пригласил Эли внутрь. Она молча зашла и оглядела моё жильё."
@@ -782,11 +786,11 @@ label start
 
     "И действительно, мой дом сиял чистотой, даже я это не приметил. Похоже Химицу зря времени не теряла."
 
-    play ambience kitchen_night fadein 2
     window hide
     scene bg kitchen_mc_night 
     show el kojanka normal
     with dissolve 2
+    play ambience kitchen_night crossfade fadein 1
     window show
 
     "Мы прошли на кухню и нас вновь ожидал приятный сюрприз, который мне как-то надо объяснить Эли."

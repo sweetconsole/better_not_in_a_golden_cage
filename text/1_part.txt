@@ -9,14 +9,14 @@ label start
     "Будь ты в СССР, или в Японии - никаких различий не присутствует. Что там, что тут большинство встают либо по будильнику, либо из за гула разношёрстной касты людей, шумящих с первыми лучами солнца."
 
     play sfx alarm_clock forceloop true fadein 2
-    play ambience room_mc_morning fadein 2
     window hide
     scene bg room_mc_day with fade 1 1 1 black
+    play ambience room_mc_morning crossfade fadein 1
     window show
 
     "Я проснулся.<w> И всё же какое прекрасное утро."
 
-    play music new fadein 2
+    play music new crossfade fadein 2
 
     "Могло бы оно быть прекрасным, если бы под утро не начал трезвонить мой будильник."
 
@@ -33,11 +33,11 @@ label start
     "Я по быстрому накинул на себя мои домашние одеяния и пошёл к выходу."
     "Хотя скорее лучше бы сказать, что пополз."
 
-    play music last_night fadein 2
     window show
     scene bg house_mc_day
     show kyo dom grin 
     with fade 1 1 1 black
+    play music last_night crossfade fadein 2
     window hide
 
     play sfx door_close_far
@@ -66,8 +66,8 @@ label start
     "Улыбнулся Кёске."
 
     window hide
-    play ambience corridor_mc_morning fadein 2
     scene bg corridor_mc_day with dissolve 2
+    play ambience corridor_mc_morning crossfade fadein 1
     window show
 
     "Я конечно не особо ждал гостей, поэтому даже толком не убрался, от чего весь мой дом больше похож на бар, который был разгромлен из за буйной и весёлой ночи."
@@ -76,12 +76,12 @@ label start
     "К слову о уборке: что вчера произошло, раз тут на каждом шагу пятна от пролитого сакэ, жаренная еда и пара побитых сервизов?"
     "Я с трудом напряг свою память, но как бы я не пытался, всё туманно, словно рычаг для подачи памяти наглухо закрыт."
 
-    play music thoughts fadein 2
     window hide
-    play ambience kitchen_morning fadein  2
     scene bg kitchen_mc_day 
     show kyo dom normal 
     with dissolve 2
+    play ambience kitchen_morning crossfade fadein 1
+    play music thoughts fadein 2
     window show
 
     "Кёске тем временем прошёлся по моему дому, и с чем то похожим на удивление проговорил."
@@ -164,10 +164,10 @@ label start
     me "Ну давай, до завтра!"
     "Сказал я с предельной дружелюбностью."
 
-    play music sunset_horizons fadein 2
-    play ambience room_mc_morning
     window hide
     scene bg room_mc_day with fade 1 1 1 black
+    play music sunset_horizons crossfade fadein 2
+    play ambience room_mc_morning crossfade fadein 1
     window show
 
     play sfx door_close_far
@@ -190,9 +190,9 @@ label start
     "А дальше совершенно разные варианты: Либо всё заканчивается хорошо и вы любите друг друга, либо же когда ты понял, что хочешь ответить взаимностью, чувства другого человека пропадают и ты остаёшься ни с чем."
     "Можно подолгу фантазировать о дальнейших возможностях и погружаться и софистику, но что будет, то будет..."
 
-    play ambience room_mc_morning
     window hide
     scene bg room_mc_day with fade 1 1 1 black
+    play ambience room_mc_morning fadein 1
     window show
 
     "На часах было уже 14:26, что в принципе можно назвать нормальным сном для меня."
@@ -205,9 +205,9 @@ label start
     "Да я и так занимаю у неё слишком много времени, в конце то концов каждому нужна передышка."
     "Если время останется-зайду в клуб, развеюсь перед новой неделей."
 
-    play ambience kitchen_morning fadein 2
     window hide
     scene bg kitchen_mc_day with dissolve 2
+    play ambience kitchen_morning crossfade fadein 1
     window show
 
     "Наскоро приготовив омлет и съев его, не оставив ни следа, я принялся за уборку."
@@ -229,10 +229,10 @@ label start
 
     "Я кое как напялил на себя кроссовки, да и разоделся по обычному и пошёл в клуб. Всё равно пока дома делать нечего, а так хоть надеюсь Эли увижу. Хоть какое-то развлечение будет."
 
-    play ambience downtown_sunset fadein 2
-    play music the_spiral_of_revival fadein 2
     window hide
     scene bg bar_outside_sunset with fade 1 1 1 black
+    play ambience downtown_sunset crossfade fadein 1
+    play music the_spiral_of_revival crossfade fadein 2
     window show
 
     "Вечерело. Дул прохладный ветер, что давало понять приближение осени - а значит и резкое похолодание."
@@ -246,9 +246,9 @@ label start
 
     "Наконец я подошёл к клубу. Он был такой же, как и всегда: манящий, приглашающий тебя освежиться, выпить стаканчик-другой для достижения необходимых условий, для более комфортного проведения дня. Сегодня я был в распологающем для себя настроении, чтобы пойти на поводу у потребностей и желаний."
     
-    play ambience club fadein 2
     window hide
     scene bg club_inside with dissolve 2
+    play ambience club crossfade fadein 1
     window show
 
     "В последнее время я стал чаще заглядывать сюда, может быть в надежде увидеть Эли."
@@ -261,7 +261,7 @@ label start
     "Народ потихоньку начал кучковаться вокруг сцены в ожидании триумфального выхода рок звёзд в масштабах этого зала."
     "Я пригвоздился в середине толпы, так мне удобнее всего рассмотреть и послушать все группы."
     
-    play music lipstick_hurricane fadein 2
+    play music lipstick_hurricane crossfade fadein 2
 
     "И вот софиты засверкали и из динамиков полилась музыка, полились гитарные аккорды, звуки производимые синтезатором и барабаны, задающие ритм."
     "Группа играла, толпа ликовала и я тоже влился в этот поток криков, радостей и аплодисментов."
@@ -280,9 +280,9 @@ label start
 
     time sunset
 
-    play music not_too_late fadein 2
     window hide
     scene bg club_inside_zfeelz with dissolve 2
+    play music not_too_late crossfade fadein 2
     window show
 
     "Как раз к моему появлению на сцену вышла Эли собственной персоной, и без лишних слов начали разыгрывать музыку."
@@ -303,7 +303,6 @@ label start
 
     time night
 
-    play music last_man fadein 2
     window hide
     scene bg backstage 
     show tr suit normal at left
@@ -311,6 +310,7 @@ label start
     show drum suit normal at rright
     show git suit normal at right 
     with fade 1 1 1 black
+    play music last_man crossfade fadein 2
     window show
 
     "Я быстрым шагом добрался до закулисья, дабы на этот раз точно не упустить её."
@@ -345,12 +345,12 @@ label start
 
     "Эли прошла мимо меня и я последовал за ней."
 
-    play ambience downtown_night fadein 2
-    play music i_will_believe_in_you fadein 2
     window hide
     scene bg club_outside_night
     show el kojanka normal 
     with fade 1 1 1 black
+    play ambience downtown_night crossfade fadein 1
+    play music i_will_believe_in_you crossfade fadein 2
     window show
 
     "Мы вышли из клуба и в нос ударил обыденный, уличный запах. Как приятно однако оказаться на свежем воздухе!"
@@ -415,11 +415,11 @@ label start
 
     el "Ну пошли тогда!"
 
-    play music to_die_or_not_to_die fadein 2
     window hide
     scene bg corporation_night
     show el kojanka normal
     with fade 1 1 1 black
+    play music to_die_or_not_to_die crossfade fadein 2
     window show
 
     "Мы выдвинулись в сторону деловых кварталов, где стоят огромные небоскрёбы, а в них люди решают проблемы и работу масштабов компании, в которых они работают."
@@ -465,9 +465,9 @@ label start
     pause hard 1.0
     scene bg tokyo_street2_night with dissolve 1.5
     pause hard 1.0
-    play ambience garden_night fadein 2
-    play music reflections fadein 2
     scene bg garden_night with dissolve 1.5
+    play ambience garden_night crossfade fadein 1
+    play music reflections crossfade fadein 2
     window show
 
     "Мы обошли множество зданий, ларьков, мостов и прочих архитектурных сооружений, чтобы порядком от всего этого устать."
@@ -596,9 +596,9 @@ label start
     "Я же, недолго думая, решил взять такси и побыстрее оказаться дома, в тепле и неком расслаблении."
 
     stop ambience fadeout 2
-    play music new fadein 2
     window hide
     scene bg black with fade 1 1 1 black
+    play music new crossfade fadein 2
     window show
 
     "Иногда я думаю так, будто Дзен познал. Ну на самом деле, конечно, я преувеличиваю, ведь для этого нужно пройти многие, серьёзные испытания."
@@ -613,15 +613,16 @@ label start
     "Почти нигде из таких домиков не горел свет, ведь Японцы ложатся рано, да и встают тоже рано..."
     "А время уже достаточно позднее."
 
-    play ambience room_mc_night
     window hide
     scene bg house_mc_night2 with fade 1 1 1 black
+    play ambience room_mc_night crossfade fadein 1
     window show
 
     "Такси высадило меня у места назначения. Я расплатился и навеселе потопал домой."
 
     window hide
     scene bg corridor_mc_night2 with dissolve 1
+    play ambience corridor_mc_night crossfade fadein 1
     window show
 
     "Моё веселье не обусловлено алкоголем, просто мне было хорошо от сегодняшнего дня, даже есть особо не хотелось."
@@ -629,6 +630,7 @@ label start
 
     window hide
     scene bg room_mc_night with dissolve 1
+    play ambience room_mc_night crossfade fadein 1
     window show
 
     "Раздевшись, я прыгнул на кровать, закутавшись под одеяло. Завтра новый день, новая неделя."

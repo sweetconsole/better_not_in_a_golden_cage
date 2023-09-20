@@ -1,2 +1,5 @@
 label start
+
+    backdrop "День четвёртый" bg hi_ca duration 5
+
     time day

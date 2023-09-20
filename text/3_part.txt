@@ -1,5 +1,5 @@
 label start
-    backdrop "День третий"  bg el duration 5
+    backdrop "День третий" bg el duration 5
 
     time day
     
@@ -11,8 +11,8 @@ label start
     "А я, как капитан - ушёл вместе с кораблём на дно."
     
     window hide
-    play ambience room_mc_morning fadein 2
     scene bg room_mc_day with dissolve 2
+    play ambience room_mc_morning fadein 1
     window show
 
     "Вот и наступил новый день. Я открыл и почесал заспанные глаза."
@@ -55,14 +55,15 @@ label start
     "Я надел тапки и лениво поплёлся на кухню."
 
     window hide
-    play ambience corridor_mc_morning fadein 2
     scene bg corridor_mc_day with dissolve 1
+    play ambience corridor_mc_morning crossfade fadein 1
     pause hard 1
-    play music take_a_deep_breath fadein 2
-    play ambience kitchen_morning fadein 2
     scene bg kitchen_mc_day 
     show hi forma normal hands2
     with dissolve 1
+    play music take_a_deep_breath crossfade fadein 2
+    play ambience kitchen_morning crossfade fadein 1
+    window show
 
     "В нос ударил ароматный запах яичницы. Я уверен, что по вкусу будет ничуть не хуже."
 
@@ -88,10 +89,11 @@ label start
     "Поэтому хочу день с приятными сюрпризами!"
 
     window hide
-    play ambience tokyo_street_day fadein 2
     scene bg tokyo_street_day 
     show hi forma smile hands2
     with fade 1 1 1 black
+    play ambience tokyo_street_day crossfade fadein 1
+    window show
 
     hi "Нико-кун, сегодня ты прям какой-то счастливый."
     "И вправду, половину пути я просто шёл с улыбкой."
@@ -119,11 +121,12 @@ label start
 
     me "Всё бывает в первый раз знаешь ли!"
 
-    play music waltz_of_doubts fadein 2
     window hide
     scene bg school_far_day 
     show hi forma normal hands2
     with fade 1 1 1 
+    play music waltz_of_doubts crossfade fadein 2
+    window show
 
     "Вскоре мы дошли до школы. переобувшись, я направился в свой класс в спокойном, привычном для себя темпе."
 
@@ -132,6 +135,7 @@ label start
 
     window hide
     scene bg class_mc_break with dissolve 2
+    window show
 
     "Спустя минуту я уже зашёл в класс. Пришёл я одним из последних, как обычно."
     "Я со всеми поздоровался и присел за своё место."
@@ -172,25 +176,25 @@ label start
     "И следить за мной будут точно."
 
     play sfx school_bell
-    play ambience class_break fadein 2
     window hide
     scene bg class_mc_break with dissolve 2
+    play ambience class_break crossfade fadein 1
     window show
 
     "Прошёл урок, на котором я в очередной раз погряз в размышлениях."
 
     play sfx school_bell
-    play ambience school_hallway_break fadein 2
     window hide
     scene bg school_corridor with dissolve 2
+    play ambience school_hallway_break crossfade fadein 1
     window show
 
     "Решил пойти на крышу, где заведомо встречу Кагомэ."
     "Просто решил с ней мило поболтать, всё равно пока всем не до меня."
 
-    play ambience school_roof_birds fadein 2
     window hide
     scene bg school_roof_day with dissolve 2
+    play ambience school_roof_birds crossfade fadein 1
     window show
 
     "Поднявшись на крышу я никого не увидел."
@@ -198,7 +202,7 @@ label start
     "Ну беда. Уже Кагомэ не нахожу."
     "Ну и ладно! Обиженный за весь мир я уже размышлял о том, чтобы пойти домой."
 
-    play music fractal fadein 2
+    play music fractal crossfade fadein 2
     show el forma normal size far with dissolve 2
     volume sfx 0.5
     play sfx door_wind_stairwell
@@ -332,10 +336,10 @@ label start
     "Через пару дней будет экскурсия с ночёвкой, точнее это будет четверг."
     "За это время может произойти масса проблем, надо быть ко всему готовым."
 
-    play ambience downtown_day fadein 2
-    play music embers fadein 2
     window hide
     scene bg school_far_day with fade 1 1 1 black
+    play ambience downtown_day crossfade fadein 1
+    play music embers crossfade fadein 2
     window show
 
     "Я вышел из школы и быстренько поплёлся к дому."
@@ -349,9 +353,9 @@ label start
 
     "И будет со мной только моя верная бутылка сакэ."
 
-    play ambience corridor_mc_day fadein 2
     window hide
     scene bg corridor_mc_day with dissolve 2
+    play ambience corridor_mc_day crossfade fadein 1
     window show
 
     "Я дошёл до дома и на пороге посеялись сомнения."
@@ -360,12 +364,12 @@ label start
 
     "Я снял ботинки и аккуратно подошёл к кухне."
 
-    play ambience kitchen_day fadein 2
-    play music sudden_trip fadein 2
     window hide
     scene bg kitchen_mc_day
     show ir suit smile hands2
     with dissolve 2
+    play ambience kitchen_day crossfade fadein 1
+    play music sudden_trip crossfade fadein 2
     window show
 
     "Там расположилась Ирина с улыбчивым и загадочным взглядом."
@@ -466,12 +470,12 @@ label start
 
     me "Ну что же, хорошо."
 
-    play ambience corridor_mc_day fadein 2.0
-    play music burita fadein 2
     window hide
     scene bg corridor_mc_day
     show ir suit normal hands2
     with dissolve 2
+    play ambience corridor_mc_day crossfade fadein 1
+    play music burita crossfade fadein 2
     window show
 
     "Она встала и перед уходом напоследок кинула."
@@ -492,9 +496,9 @@ label start
 
     time sunset
 
-    play ambience room_mc_sunset fadein 2
     window hide
     scene bg room_mc_sunset with fade 2 2 2 black
+    play ambience room_mc_sunset crossfade fadein 1
     window show
 
     "Прошло несколько часов с тех пор, как ушла Ирина."
@@ -567,9 +571,9 @@ label start
     "Я поднял трубку в надежде, что не случилось чего-либо такого, что могло бы отменить встречую."
 
     stop sfx
-    play music popurri fadein 2
     window hide
     scene cg day3_phone
+    play music popurri crossfade fadein 2
     window show
 
     me "Алло?"
@@ -629,14 +633,14 @@ label start
     "Предыдущая проблема вдруг резко перестала иметь значение, ведь на её место пришла проблема более масштабная."
     "Теперь мне надо успеть в одно время прийти на две встречи в одном месте."
 
-    play music mistery_of_loneliness fadein 2
+    play music mistery_of_loneliness crossfade fadein 2
 
     "Я оделся и быстро пошёл в сторону центра, попутно прикидывая варианты развития событий."
 
     window hide
     scene bg house_mc_sunset with dissolve 2
+    play ambience downtown_sunset crossfade fadein 1
     pause hard 1.5
-    play ambience downtown_sunset  fadein 2
     scene bg tokyo_street_sunset with dissolve 2
     window show
 
@@ -652,7 +656,7 @@ label start
     "А вот с Эли всё немного сложнее. Она может приехать на неизвестной мне машине, или вообще решит прийти пешком."
     "Она горазда на сюрпризы."
 
-    play music rockin fadein 2
+    play music rockin crossfade fadein 2
     show el plate smile with dissolve 1
 
     el "Привет!"
@@ -724,9 +728,9 @@ label start
     "От неё ни одного звука."
     "Я уже мог начать закипать, но похоже мой интерес был выше моих эмоций, так что я смиренно шёл за ней."
 
-    play music city_sleeps fadein 2
     window hide
     scene bg tokyo_street2_sunset with fade 1 1 1 black 
+    play music city_sleeps crossfade fadein 1
     window show
 
     "Вскоре массивные высотные здания потихоньку сходили на нет."
@@ -737,10 +741,10 @@ label start
     "Она шла с гордо поднятой головой. Небось довольна, что я за ней тут бегаю."
     "Прошло ещё 5 минут, прежде чем мы дошли."
 
-    play music thoughts fadein 2
-    play ambience seashore fadein 2
     window hide
     scene bg seashore with fade 1 1 1 black
+    play music thoughts crossfade fadein 2
+    play ambience seashore crossfade fadein 1
     window show
 
     "Перед моим взором встала одинокая скамейка, расположенная вдали от толп людей."
@@ -820,7 +824,7 @@ label start
 
     "Она немного помолчала, затем снова продолжила."
 
-    play music in_this_very_moment fadein 2
+    play music in_this_very_moment crossfade fadein 1
     show el plate shy hands3
 
     el "А вот любовь."
@@ -889,11 +893,11 @@ label start
 
     time night
 
-    play ambience downtown_night fadein 2
     window hide
     scene bg tokyo_street2_night
     show el plate normal
     with dissolve 2 
+    play ambience downtown_night crossfade fadein 1
     window show
 
     "Разумеется пока не встретили первый таксофон."
@@ -911,9 +915,9 @@ label start
     "Хотя время уже позднее, почти все магазины закрыты."
 
     stop ambience fadeout 2
-    play music arctic_lakes_in_your_pure_eyes fadein 2
     window hide
     scene bg black with fade 2 2 2 black
+    play music arctic_lakes_in_your_pure_eyes crossfade fadein 2
     window show
     play sfx car_drove_up fadein 1
 
@@ -925,9 +929,9 @@ label start
     "Я не сразу понял, когда пришло время мне покинуть машину, поэтому кое-как я из неё вышел."
     "Эли же поцеловала меня на прощанье, а после уехала."
 
-    play ambience downtown_night fadein 2
     window hide
     scene bg akihibara_night with dissolve 2
+    play ambience downtown_night crossfade fadein 1
     window show
 
     "Ночная прохлада быстро свела мои желания ко сну на нет. Поэтому при такой возможности я быстро зашагал домой."
@@ -941,17 +945,17 @@ label start
     "Ещё спустя время я дошёл до дома. Естественно свет в нём не горел, да и не должен."
     "Завтра школа, а я тут по ночам шастаю."
 
-    play ambience corridor_mc_night fadein 2
     window hide
     scene bg corridor_mc_night2 with dissolve 2
+    play ambience corridor_mc_night crossfade fadein 1
     window show
     play sfx door_open_keys
 
     "Зайдя в дом, я с лёту скинул с себя ботинки и принялся переодеваться в домашнюю одежду."
 
-    play ambience kitchen_night fadein 2
     window hide
     scene bg kitchen_mc_night with dissolve 2
+    play ambience kitchen_night crossfade fadein 1
     window show
 
     "После я забежал на кухню и увидел там записку."
@@ -971,9 +975,9 @@ label start
 
     "Домашнее задание?<w> Я уже давно его не делал. Лучше уж поем, хоть спать хочется нечеловечески сильно."
 
-    play ambience room_mc_night fadein 2
     window hide
     scene bg room_mc_night with dissolve 2
+    play ambience room_mc_night crossfade fadein 1
     window show
 
     "Я провозился с едой недолго и после усталыми, медленными шагами дошёл до своей кровати и кое-как завалился на неё, полностью окутавшись одеялом."
