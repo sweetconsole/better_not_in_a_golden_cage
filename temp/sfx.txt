@@ -83,8 +83,8 @@ knock_syncopation               па да бумс
 metal_rumble                    падение металлических прутьев
 nya                             Ня
 papier_mache                    смятая бумага
-payphone_down                   повесили дележный телефон 
-payphone_up                     оплатили дележный телефон 
+payphone_down                   повесили денежный телефон 
+payphone_up                     оплатили денежный телефон 
 pebble_in_glass                 стекляный кусочек
 pebble_in_glass_louder          стекляный кусочек
 pen_write_adress                написание на бумаге
