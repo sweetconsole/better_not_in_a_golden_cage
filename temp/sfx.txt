@@ -1,0 +1,155 @@
+alarm_clock                     будильник
+alarm_clock_hit                 выключение будильника
+auto_horn                       гудок машины
+bar_noise                       шум в баре
+battle_begins                   подходящие шаги и хруст пальцами
+beebs                           гудки телефона
+beebs_short                     короткие гудки телефона
+bento                           открытие бенто
+bird_nasty_sing                 пение птицы
+break_plates1                     
+break_plates2                   разбитие посуды
+break_plates3                   
+break_plates4                   
+cart_fish_impact                столкновение с рыбной повозкой
+car_drive_up_outside            подьежает машина из далека
+car_drove_up                    подьежает машина
+car_horn                        гудок машины
+car_horn_outside                гудок машины из далека
+car_stops_tires_screeching      машина резко тормозит
+clock_slow                      медленое тиканье часов
+clock_ticked_fading             
+clock_ticking                   тиканье часов
+close_door_light                тихое закрытие двери
+creepy_sound                    завывание и протяжный гул
+desk_creak                      скрип
+distort_shutter                 перетягивание затвора
+domophone                       набор по телефону
+doorbell                        звонок в дверь
+door_bell_close                 короткий близкий звонок в дверь
+door_bell_outside               короткий дальний звонок в дверь
+door_bell_outside_ca            звонок в дверь Кетрин
+door_bell_outside_close         звонок в дверь первый близко второй близкий 
+door_bell_outside_far           звонок в дверь первый близко второй дальний 
+door_bell_outside_hi            звонок в дверь Химицу
+door_close_far                  глухое открытие двери 
+door_close_keys                 закрытие двери на ключ со скрипом
+door_close_shoji                
+door_fists_punch                стуки в дверь
+door_keys_footsteps             открытие двери с ключа и шаги
+door_open_bar_footsteps_heavy   открытие двери со колокольчиком с ключа и шаги
+door_open_bar_footsteps_light   открытие двери со колокольчиком и тихие шаги
+door_open_close_light           тихое открытие двери
+door_open_creak                 открытие тяжёлой двери со скрипом
+door_open_creak_slow            открытие тяжёлой двери со скрипом медленным                  
+door_open_far                   открытие дальней двери
+door_open_keys                  открытие двери с ключа
+door_open_keys_light            звон ключами и открытие двери
+door_open_keys_light_outside    звон ключами и открытие двери из далека
+door_open_light                 тихое открытие двери        
+door_open_magnetic_lock         открытие двери лифта
+door_open_metal_fast            быстрое открытие металичкой двери
+door_open_slow                  медленное открытие двери
+door_slam                       стук в дверь
+door_slams_roof                 стук в дверь с эхо
+door_wind_stairwell             металлическая дверь на крышу школы
+drinking_water                  питьё воды
+dripping_water                  звук капающий воды
+ellie_salver                    звук разбития вазы простыней
+engine_noise_outside            звук глушения двигателя
+face_hit                        удар по лицу
+fan_outside_room                комната с кондиционером из далека
+fan_room                        комната с кондиционером
+fatwomen_impact                 звук падающий женщины
+flush_toilet                    звук смыва унитаза
+food_preparing                  готовка еды
+fridge                          открытие холодильника 
+frying_eggs                     готовка яйчницы
+glass_water                     звук наливания воды в стакан
+guitar_fail                     электро-гитарный фейл
+guitar_falls_floor              гитарный фейл
+heels_knock_concrete            звук шагов в далеке
+hitting_table_rage              удар по столу и разбитие посуды
+hitting_table_rage1             удар по столу 
+hit_desk
+hit_folder_table                закрытие шкафа с бумагами
+hit_head_chipboard              закрытие шкафа
+intercom                        звонок в кабинет
+intercom_opened                 вход в кабинет по звонку
+kagome_incedent                 Кагомэ случай
+kicks_bench                     удар по скамейке
+kick_can_soda                   звук падающий банки из под газировки
+knock_syncopation               па да бумс
+metal_rumble                    падение металлических прутьев
+nya                             Ня
+papier_mache                    смятая бумага
+payphone_down                   повесили денежный телефон 
+payphone_up                     оплатили денежный телефон 
+pebble_in_glass                 стекляный кусочек
+pebble_in_glass_louder          стекляный кусочек
+pen_write_adress                написание на бумаге
+petard                          хлопок петарды
+phone_disk                      набор по телефону с кругом
+phone_international             гудки по телефону
+phone_put                       положили телефон
+phone_ringing                   звонок в телефон
+phone_ringing_electric_far      звонок в электро-телефон
+phone_ringing_outside           звонок в телефон из далека
+phone_take                      взяли телефон
+pointer                         стук указки
+police_whistle                  свисток
+port                            порт
+railroad_poezd_vlevo            поезд едет влево
+railroad_poezd_vlevo_short      поезд быстро едет влево
+railroad_poezd_vpravo           поезд едет вправо
+railroad_poezd_vpravo_short     поезд быстро едет вправо
+railroad_signal                 звонок на переезде поезда
+revolver_clank                  шелчёк револьвера
+running_concrete                звук бега по бетону
+running_hallway                 звук бега по коридору
+run_breath                      отдышка
+rustles_garden                  валяние в листьях в парке
+rusty_wheels                    звук скрипы ржавых колёс
+school_bell                     школьный звонок
+school_bell_far                 школьный звонок из далека
+shop_door_bell                  магазин колокольчик
+short_wistle                    свист
+shot                            выстрел
+shots                           много тихих выстрелов
+shot_dull                       выстрел из револьвера
+shoving                         падение
+skirmish                        перестрелка на машинах
+slaps_pencil_table              удар по парту
+squeaky_door_open               затяжное открытие двери со скрипом
+steps_corridor                  шаги по коридору
+steps_corridor_louder           долгие шаги по коридору
+steps_corridor_short            шаги по коридору быстро
+steps_heavy                     глухие шаги в далеке
+steps_mansion                   шаги людей
+stomach_grumble                 желудок
+string_breaks_bass              звук порванной струнны на гитаре
+table_knock_knuckles            стуки по стеклу
+teapot_whistle_close            чайник кипит
+teapot_whistle_far              чайник кипит в далеке
+tear_off_tape                   скотч
+thunder_far                     гром
+trash                           звук выкидывания мусора
+tv_noise                        звук шума тв
+tv_turn_off                     звук выключения тв
+vandals                         разбитие окна
+washing_dishes                  мытьё посуды
+waterpool_girls_distant         купание девочек
+water_sink                      вода течёт
+wind_cold                       звук холодного ветра
+wind_like_applause              звук ветра зимой
+wooden_sticks                   звук китайских палочек
+wood_floor_footsteps            шаги по полу со скрипом
+wood_knock                      стук по двери
+wood_knock_close                стук по двери близко
+wood_knock_close_2              стук по двери близко
+wood_knock_far                  стук по двери далеко
+wood_knock_far_light            тихие стуки по двери в далеке
+wood_knock_far_louder           стуки по двери в далеке с эхо
+wood_knock_light                тихие стуки по двери
+wood_knock_louder               стуки в дверь
+wood_pound_far                  стуки в дверь далеко
