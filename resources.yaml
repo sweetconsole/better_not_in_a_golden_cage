@@ -31,6 +31,7 @@
   bg: 
     backstage: images/bg/backstage.jpg
     car_outside: images/bg/car_outside.jpg
+    car_outside_2: images/bg/car_outside_2.jpg
     seashore: images/bg/seashore.jpg
     sky_night: images/bg/sky_night.jpg
 
@@ -45,6 +46,7 @@
     waltz_of_doubts: sounds/music/waltz_of_doubts.ogg
 
     seashore: sounds/ambience/seashore.ogg
+    inside_car: sounds/ambience/inside_car.ogg
     
   positions:
     lleft: -0.25 -0.59
@@ -85,7 +87,7 @@
       <br>
 
       <b>Странички авторов модификации во ВКонтакте</b>
-      <br>https://vk.com/sweetconsole<br>https://vk.com/alaccy
+      <br>https://vk.com/sweetconsole<br>https://vk.com/nltoff
       <br>
 
       <b>Авторы на Ficbook</b>
