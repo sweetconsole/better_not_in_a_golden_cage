@@ -12,7 +12,7 @@
         twirl: false
         color: "#D1B53B32"
       2:
-        name: tokyo_street_day_birds
+        name: tokyo_street_day
         condition: "datetime.hour >= 7 && datetime.hour < 17"
         twirl: false
         color: "#D1B53B32"
