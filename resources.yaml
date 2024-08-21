@@ -36,6 +36,7 @@
     sky_night: images/bg/sky_night.jpg
 
   sound:
+    cold_iron: sounds/music/cold_iron.ogg
     confession: sounds/music/confession.ogg
     goodbye_home_shores: sounds/music/goodbye_home_shores.ogg
     meet_me_there: sounds/music/meet_me_there.ogg
@@ -44,6 +45,7 @@
     silhouette_in_sunset: sounds/music/silhouette_in_sunset.ogg
     smooth_machine: sounds/music/smooth_machine.ogg
     waltz_of_doubts: sounds/music/waltz_of_doubts.ogg
+    where_stara_await_you: sounds/music/where_stara_await_you.ogg
 
     seashore: sounds/ambience/seashore.ogg
     inside_car: sounds/ambience/inside_car.ogg
@@ -51,6 +53,8 @@
   positions:
     lleft: -0.25 -0.59
     rright: 0.25 -0.59
+    fleft: -0.45 -0.59
+    fright: 0.45 -0.59
 
   help:
     credits: 
